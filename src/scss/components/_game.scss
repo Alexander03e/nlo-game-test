@@ -1,0 +1,32 @@
+.game{
+  &__start{
+    width:100%;
+    height: 100%;
+    position:relative;
+  }
+  
+}
+.stats__wrapper{
+  border:5px solid black;
+  background-color: #c4d5f2;
+  width:147px;
+  border-radius: 0.5em;
+  margin:0;
+  display:flex;
+  align-items: center;
+  // gap:1em;
+  justify-content: space-around;
+  height:47px;
+}
+img{
+  margin:0;
+  padding:0;
+}
+.stats{
+  position:absolute;
+  top:8px;
+  left:8px;
+  right:8px;
+  display: flex;
+  justify-content: space-between;
+}

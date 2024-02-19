@@ -4,10 +4,12 @@ interface IGameState {
   destroyed: number;
   step: number;
   timeLeft: number;
+  maxNlo: number;
 }
 
 const initialState: IGameState = {
   destroyed: 0,
+  maxNlo: 10,
   step: 0,
   timeLeft: 30,
 };

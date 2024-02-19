@@ -3,9 +3,10 @@ import { StartScreen } from "./components/StartScreen";
 import { useAppDispatch, useAppSelector } from "./store/hooks";
 import { StepOne } from "./components/StepOne";
 import { StepTwo } from "./components/StepTwo";
+import { GameStart } from "./components/GameStart";
 
 export const Game = () => {
-  const { destroyed, step, timeLeft } = useAppSelector((state) => state.game);
+  const { step } = useAppSelector((state) => state.game);
   const renderScreen = (step: number) => {
     switch (step) {
       case 0:
@@ -14,13 +15,13 @@ export const Game = () => {
         return <StepOne />;
       case 2:
         return <StepTwo />;
+      case 3:
+        return <GameStart />;
       default:
         break;
     }
   };
-  useEffect(() => {
-    renderScreen(step);
-  }, [step]);
+
   return (
     <div className="container">
       <div className="background">{renderScreen(step)}</div>
