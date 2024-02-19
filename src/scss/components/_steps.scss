@@ -1,0 +1,91 @@
+.steps-container{
+  width: 334px;
+  height: 582px;
+  border:1px solid black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // gap: 10em;
+  left: 0;
+  right: 0;
+  top: 2em;
+  padding: 1em;
+  text-align: center;
+  background-image: url('../../../public/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  line-height: 20px;
+  button{
+    margin-bottom:1em;
+  }
+  p{
+    font-size: 12px;
+    color:white;
+  }
+}
+
+.step-one__finger{
+  background-image: url('../../../public/elems_click/prop1def.svg');
+  width:145px;
+  height:284px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  animation: finger 3s linear infinite;
+  p{
+    font-size: 12px;
+    color:white;
+  }
+}
+
+@keyframes finger {
+  0%{
+    background-image: url('../../../public/elems_click/prop1def.svg');
+  }
+  25%{
+    background-image: url('../../../public/elems_click/prop12.svg');
+  }
+  50%{
+    background-image: url('../../../public/elems_click/prop13.svg');
+  }
+  75%{
+    background-image: url('../../../public/elems_click/prop14.svg');
+  }
+  100%{
+    background-image: url('../../../public/elems_click/prop15.svg');
+  }
+  
+}
+
+.step-two__finger{
+  background-image: url('../../../public/elems_no-click/prop1def.svg');
+  width:145px;
+  height:284px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  animation: finger-no-click 3s linear infinite;
+  p{
+    font-size: 6px;
+    color:white;
+  }
+}
+
+@keyframes finger-no-click {
+  0%{
+    background-image: url('../../../public/elems_no-click/prop1def.svg');
+  }
+  25%{
+    background-image: url('../../../public/elems_no-click/prop12.svg');
+  }
+  50%{
+    background-image: url('../../../public/elems_no-click/prop13.svg');
+  }
+  75%{
+    background-image: url('../../../public/elems_no-click/prop14.svg');
+  }
+  100%{
+    background-image: url('../../../public/elems_no-click/prop15.svg');
+  }
+  
+}
